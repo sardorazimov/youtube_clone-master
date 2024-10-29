@@ -3,7 +3,7 @@
 
 
 
-const VideoItem = ({ video }) => {
+const VideoItem = ({ video }:any) => {
     return (
       <a className="group" href="#">
         <div className="">
