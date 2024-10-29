@@ -1,17 +1,14 @@
-"use client"
-
 import YouTubeVideoGrid from '@/components/shared/detalis/Hero'
-import Hero from '@/components/shared/detalis/Hero'
 import NavigationBar from '@/components/shared/Navigation'
 import React from 'react'
 
-const page = () => {
+const RootPage = () => {
   return (
     <div>
-       <NavigationBar />
-       <YouTubeVideoGrid />
+     <NavigationBar />
+     <YouTubeVideoGrid />
     </div>
   )
 }
 
-export default page
+export default RootPage
