@@ -19,7 +19,9 @@ export default function Navbar() {
             <div className='lg:hidden flex'>
               {/* <MobileNavbar /> */}
             </div>
-            <a href='/' className="text-xl font-bold text-red-600">YouTube</a>
+            <a href='/' >
+            <img src="/icon_rgb.png" alt="" className='w-10 h-10' />
+            </a>
           </div>
           <div className="flex-1 max-w-xl mx-4">
             <div className="relative">
