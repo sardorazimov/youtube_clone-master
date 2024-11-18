@@ -1,3 +1,4 @@
+import MobileFooter from "@/components/shared/detalis/MobileFooter"
 import Navbar from "@/components/shared/Navbar"
 import NavigationBar from "@/components/shared/Navigation"
 import Sidebar from "@/components/shared/SideBar"
@@ -15,7 +16,10 @@ const HomeLayout = ({children}:HomeLayoutProps) => {
       <Navbar/>
       <NavigationBar/>
       {/* Todo */}
-      <section className="mt-20 lg:pl-72">{children}</section>
+      <section className="mt-20 lg:pl-72">
+        {children}
+         <MobileFooter/>
+      </section>
         
     </main>
   )
