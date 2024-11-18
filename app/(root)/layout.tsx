@@ -1,3 +1,5 @@
+import Navbar from "@/components/shared/Navbar"
+
 interface DashboardLayoutProps{
     children: React.ReactNode
 }
@@ -5,6 +7,7 @@ interface DashboardLayoutProps{
 const DashboardLayout = ({children}:DashboardLayoutProps) => {
   return (
     <main>
+   
         {children}
     </main>
   )

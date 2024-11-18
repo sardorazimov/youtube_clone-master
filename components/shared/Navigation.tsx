@@ -55,7 +55,7 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className={cn(" flex  mt-[72px] lg:pl-72   max-w-full fixed  text-neutral-400", scrolled && "bg-black")}>
+    <div className={cn(" flex  mt-[72px]    max-w-full fixed  text-neutral-400", scrolled && "bg-black")}>
       <div className="flex items-center gap-x-2 overflow-x-auto pb-2">
         <a href="/">
           <div className="py-2 px-3 text-sm rounded-md flex items-center gap-x-1 hover:shadow-sm transition cursor-pointer border border-sky-800/10 bg-sky-500/10 text-sky-800">

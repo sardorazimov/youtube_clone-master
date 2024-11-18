@@ -28,7 +28,7 @@ export const sidebarLinks = [
       {
         icon: "UserRound",
         title: "Your channel",
-        url: "#",
+        url: "",
       },
       {
         icon: "History",
@@ -120,7 +120,7 @@ export const videos = [
     title: "Top 10 Easy To Create JavaScript Games For Beginners",
     channel: {
       name: "Azimov Sardor",
-      url: "https://www.youtube.com/@Azimov Sardor",
+      url: "/videos/create",
       logo: "/lena.jpeg",
     },
     views: "27K",

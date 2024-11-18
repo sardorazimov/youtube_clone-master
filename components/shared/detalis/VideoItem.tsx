@@ -5,7 +5,7 @@
 
 const VideoItem = ({ video }:any) => {
     return (
-      <a className="group" href="#">
+      <a className="group" href="/video">
         <div className="">
           <img className="rounded-lg aspect-video " src={video.thumbnailURL} alt={video.title} />
           <p className="absolute bottom-2 right-2 text-sm bg-black bg-opacity-50 text-white px-1.5 font-medium rounded-md">

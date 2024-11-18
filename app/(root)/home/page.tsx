@@ -1,7 +1,6 @@
 import YouTubeVideoGrid from "@/components/shared/detalis/Hero"
 
-
-const page = () => {
+const Home = () => {
   return (
     <div className="">
      <YouTubeVideoGrid/>
@@ -9,4 +8,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Home
