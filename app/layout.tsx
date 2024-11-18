@@ -39,18 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className='relative'>
-            <Navbar />
-            <div className='flex'>
-              <div className='lg:w-[264px] lg:flex hidden'><Sidebar /></div>
-              <section className='flex min-h-screen flex-1 flex-col  pb-6 pt-20'>
-                <div className='w-full'>
-                  {children}
-                  <MobileFooter />
-                </div>
-              </section>
-            </div>
-          </main>
+          {children}
         </ThemeProvider>
       </body>
     </html>

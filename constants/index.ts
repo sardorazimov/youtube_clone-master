@@ -1,7 +1,7 @@
 export const sidebarLinks = [
     {
       imgURL: '/svgs/home.svg',
-      route: '/',
+      route: '/home',
       label: 'Home',
     },
   
@@ -68,32 +68,32 @@ export const sidebarLinks = [
 
   export const channels = [
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'Fezot',
     },
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'Upg Gaming'
     },
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'Khiva Gaming',
     },
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'Lena Gaming',
     },
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'Activision',
     },
     {
-      imgURL:'/vercel.jpeg',
+      imgURL:'/lena.jpeg',
       route: '/personal',
       label: 'NextJS',
     }
