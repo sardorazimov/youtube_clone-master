@@ -13,7 +13,7 @@ const HomeLayout = ({children}:HomeLayoutProps) => {
       <div className="w-64 h-full lg:flex hidden">
         <Sidebar/>
       </div>
-      {/* <Navbar/> */}
+      <Navbar/> 
       <div className="lg:pl-72"> <NavigationBar/></div>
       {/* Todo */}
       <section className="mt-20 lg:pl-72">

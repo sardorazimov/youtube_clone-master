@@ -17,8 +17,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between px-4 ">
             <div className="flex items-center">
               <div className="lg:hidden flex">{/* <MobileNavbar /> */}</div>
-              <a href="/">
+              <a href="/home" className="flex gap-1">
                 <img src="/icon_rgb.png" alt="" className="w-10 h-10" />
+                <h2 className="flex font-sans  text-xl items-center  ">Premium</h2>
               </a>
             </div>
             <div className="flex-1 max-w-xl mx-4">
