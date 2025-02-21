@@ -1,100 +1,43 @@
-export const sidebarLinks = [
-    {
-      imgURL: '/svgs/home.svg',
-      route: '/home',
-      label: 'Home',
-    },
-  
-    {
-      imgURL: '/svgs/shorts.svg',
-      route: '/upcoming',
-      label: 'Shorts',
-    },
-    {
-      imgURL: '/svgs/obuna.svg',
-      route: '/previous',
-      label: 'Subscripe',
-    },
-    {
-      imgURL: '/svgs/music.svg',
-      route: '/recording',
-      label: ' Music',
-    },
-    {
-      imgURL: '/svgs/personal.svg',
-      route: '/personal',
-      label: 'Channels',
-    },
-    
-  ];
-  
-  export const avatarImages = [
-   '/public/images/img.jpg'
+import { Home, PlaySquareIcon,FlameIcon,HistoryIcon,ThumbsUpIcon,ListVideoIcon } from "lucide-react";
+
+export const items = [
+   {
+    title:'Home',
+    url: "/",
+    icon: Home,
+   },
+   {
+    title:'Subscription',
+    url: "/explore/subscribe",
+    icon: PlaySquareIcon,
+    auth:true,
+   },
+   {
+    title:'Trending',
+    url: "/explore/trending",
+    icon: FlameIcon,
+    auth:true,
+   },
   ];
 
-  export const yoursetting = [
-    {
-      imgURL: '/svgs/home.svg',
-      route: '/',
-      label: 'Channels',
-    },
+export const personelsectios = [
+  {
+    title:'History',
+    url: "/playlist/history",
+    icon: HistoryIcon,
+    auth:true,
+   },
+   {
+    title:'Liked Videos',
+    url: "/playlist/liked",
+    icon: ThumbsUpIcon,
+   },
+   {
+    title:'All Playlists',
+    url: "/playlist/all",
+    icon: ListVideoIcon,
+    auth:true,
   
-    {
-      imgURL: '/svgs/shorts.svg',
-      route: '/upcoming',
-      label: 'Archive',
-    },
-    {
-      imgURL: '/svgs/obuna.svg',
-      route: '/previous',
-      label: 'PlayList',
-    },
-    {
-      imgURL: '/svgs/music.svg',
-      route: '/recording',
-      label: 'Wait',
-    },
-    {
-      imgURL: '/svgs/personal.svg',
-      route: '/personal',
-      label: 'Like Videos',
-    },
-    {
-      imgURL: '/svgs/personal.svg',
-      route: '/personal',
-      label: 'Downland',
-    },
-  ]
-
-  export const channels = [
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'Fezot',
-    },
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'Upg Gaming'
-    },
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'Khiva Gaming',
-    },
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'Lena Gaming',
-    },
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'Activision',
-    },
-    {
-      imgURL:'/lena.jpeg',
-      route: '/personal',
-      label: 'NextJS',
-    }
-  ]
+  }
+]
+  
