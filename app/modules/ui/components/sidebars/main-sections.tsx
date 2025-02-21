@@ -8,9 +8,12 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { items } from "@/constants";
+import { useAuth, useClerk } from "@clerk/nextjs";
 import Link from "next/link";
 
 const MainSections = () => {
+  const clerk = useClerk();
+  const {isSignedIn} = useAuth()
   return (
     <SidebarGroup>
       <SidebarContent>
@@ -21,9 +24,11 @@ const MainSections = () => {
                 tooltip={item.title}
                 asChild
                 isActive={false}
-                onClick={() => {
-                  // Update the selected item
-                  //...
+                onClick={(e) => {
+                if(!isSignedIn && item.auth){
+                  e.preventDefault()
+                   return clerk.openSignIn()
+                }
                 }}
               >
                 <Link href={item.url} className="flex items-center gap-4">

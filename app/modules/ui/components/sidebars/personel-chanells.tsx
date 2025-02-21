@@ -10,8 +10,11 @@ import {
 } from "@/components/ui/sidebar";
 import { items, personelsectios } from "@/constants";
 import Link from "next/link";
+import { useAuth, useClerk } from "@clerk/nextjs";
 
 const PersonelSections = () => {
+  const clerk = useClerk();
+  const {isSignedIn} = useAuth()
   return (
     <SidebarGroup>
         <SidebarGroupLabel>You</SidebarGroupLabel>
@@ -23,9 +26,11 @@ const PersonelSections = () => {
                 tooltip={item.title}
                 asChild
                 isActive={false}
-                onClick={() => {
-                  // Update the selected item
-                  //...
+                onClick={(e) => {
+                  if(!isSignedIn && item.auth){
+                    e.preventDefault()
+                     return clerk.openSignIn()
+                  }
                 }}
               >
                 <Link href={item.url} className="flex items-center gap-4">
